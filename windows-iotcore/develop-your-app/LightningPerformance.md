@@ -1,0 +1,33 @@
+---
+title: Lightning-Leistungstests
+author: msalehmsft
+ms.author: msaleh
+ms.date: 08/28/2017
+ms.topic: article
+description: Informationen Sie zu Windows IoT Lightning-Funktionalität und ein-/ausschalten Häufigkeit für verschiedene Plattformen und Sprachen.
+keywords: Windows Iot "," Lightning-Leistung "," Lightning-Funktionalität, GPIO
+ms.openlocfilehash: 65f6732dd945b199902bb7eb4a9e0cc41aac2131
+ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59513586"
+---
+# <a name="windows-iot-lightning-performance-testing"></a><span data-ttu-id="aab6d-104">Extrem Testen der Leistung von Windows IoT</span><span class="sxs-lookup"><span data-stu-id="aab6d-104">Windows IoT Lightning Performance Testing</span></span>
+
+<span data-ttu-id="aab6d-105">Die GPIO-Leistung wurde getestet, für die Windows IoT Lightning-Funktionalität, die über eine einfache app der GPIO-ein-/ausschalten, [verfügbar](https://github.com/ms-iot/lightning/tree/develop/PerformanceTestSuite).</span><span class="sxs-lookup"><span data-stu-id="aab6d-105">The GPIO performance was tested for Windows IoT Lightning functionality using a simple GPIO toggle app, [available here](https://github.com/ms-iot/lightning/tree/develop/PerformanceTestSuite).</span></span> <span data-ttu-id="aab6d-106">Die Tests wurden durch Umschalten von GPIO 5 zwischen 0 und 1 auf der maximalen Geschwindigkeit ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="aab6d-106">The tests were performed by toggling GPIO 5 between 0 and 1 at the fastest possible speed.</span></span> <span data-ttu-id="aab6d-107">Die Häufigkeit der Umschaltfläche für jeden Fall wurde mit einem Tektronix TPS 2024 Oszilloskop gemessen.</span><span class="sxs-lookup"><span data-stu-id="aab6d-107">The toggle frequency for each case was measured using a Tektronix TPS 2024 Oscilloscope.</span></span>
+
+<span data-ttu-id="aab6d-108">Die folgenden Ergebnisse wurden aus der Analyse abgerufen:</span><span class="sxs-lookup"><span data-stu-id="aab6d-108">The following results were obtained from the analysis:</span></span>
+
+> | <span data-ttu-id="aab6d-109">Plattform getestet</span><span class="sxs-lookup"><span data-stu-id="aab6d-109">Platform Tested</span></span>                     | <span data-ttu-id="aab6d-110">Sprache</span><span class="sxs-lookup"><span data-stu-id="aab6d-110">Language</span></span>        | <span data-ttu-id="aab6d-111">Frequenz</span><span class="sxs-lookup"><span data-stu-id="aab6d-111">Frequency</span></span>     |
+> | ----------------------------------- | --------------- | ------------- |
+> | <span data-ttu-id="aab6d-112">Arduino Uno</span><span class="sxs-lookup"><span data-stu-id="aab6d-112">Arduino Uno</span></span>                         | <span data-ttu-id="aab6d-113">Arduino-Sketches</span><span class="sxs-lookup"><span data-stu-id="aab6d-113">Arduino Sketch</span></span>  | <span data-ttu-id="aab6d-114">75.06 kHz</span><span class="sxs-lookup"><span data-stu-id="aab6d-114">75.06 kHz</span></span>     |
+> | <span data-ttu-id="aab6d-115">Windows 10 IoT Core Native Stack</span><span class="sxs-lookup"><span data-stu-id="aab6d-115">Windows 10 IoT Core Native Stack</span></span>    | <span data-ttu-id="aab6d-116">C#</span><span class="sxs-lookup"><span data-stu-id="aab6d-116">C#</span></span>              | <span data-ttu-id="aab6d-117">239 kHz</span><span class="sxs-lookup"><span data-stu-id="aab6d-117">239 KHz</span></span>       |
+> | <span data-ttu-id="aab6d-118">Windows 10 IoT Core Native Stack</span><span class="sxs-lookup"><span data-stu-id="aab6d-118">Windows 10 IoT Core Native Stack</span></span>    | <span data-ttu-id="aab6d-119">C++/CX</span><span class="sxs-lookup"><span data-stu-id="aab6d-119">C++/CX</span></span>          | <span data-ttu-id="aab6d-120">278 kHz</span><span class="sxs-lookup"><span data-stu-id="aab6d-120">278 kHz</span></span>       |
+> | <span data-ttu-id="aab6d-121">Windows 10 IoT Core Native Stack</span><span class="sxs-lookup"><span data-stu-id="aab6d-121">Windows 10 IoT Core Native Stack</span></span>    | <span data-ttu-id="aab6d-122">WinJS</span><span class="sxs-lookup"><span data-stu-id="aab6d-122">WinJS</span></span>           | <span data-ttu-id="aab6d-123">34 kHz</span><span class="sxs-lookup"><span data-stu-id="aab6d-123">34 kHz</span></span>        |
+> | <span data-ttu-id="aab6d-124">Windows 10 IoT Core Arduino verknüpfen</span><span class="sxs-lookup"><span data-stu-id="aab6d-124">Windows 10 IoT Core Arduino Wiring</span></span>  | <span data-ttu-id="aab6d-125">Arduino-verknüpfen</span><span class="sxs-lookup"><span data-stu-id="aab6d-125">Arduino Wiring</span></span>  | **<span data-ttu-id="aab6d-126">7.36 MHz</span><span class="sxs-lookup"><span data-stu-id="aab6d-126">7.36 MHz</span></span>**  |
+> | <span data-ttu-id="aab6d-127">Windows 10 IoT Core DMAP Stack</span><span class="sxs-lookup"><span data-stu-id="aab6d-127">Windows 10 IoT Core DMAP Stack</span></span>      | <span data-ttu-id="aab6d-128">C#</span><span class="sxs-lookup"><span data-stu-id="aab6d-128">C#</span></span>              | **<span data-ttu-id="aab6d-129">1,76 MHz</span><span class="sxs-lookup"><span data-stu-id="aab6d-129">1.76 MHz</span></span>**  |
+> | <span data-ttu-id="aab6d-130">Windows 10 IoT Core DMAP Stack</span><span class="sxs-lookup"><span data-stu-id="aab6d-130">Windows 10 IoT Core DMAP Stack</span></span>      | <span data-ttu-id="aab6d-131">C++/CX</span><span class="sxs-lookup"><span data-stu-id="aab6d-131">C++/CX</span></span>          | **<span data-ttu-id="aab6d-132">Macht 3,78 MHz</span><span class="sxs-lookup"><span data-stu-id="aab6d-132">3.78 MHz</span></span>**  |
+> | <span data-ttu-id="aab6d-133">Windows 10 IoT Core DMAP Stack</span><span class="sxs-lookup"><span data-stu-id="aab6d-133">Windows 10 IoT Core DMAP Stack</span></span>      | <span data-ttu-id="aab6d-134">WinJS</span><span class="sxs-lookup"><span data-stu-id="aab6d-134">WinJS</span></span>           | <span data-ttu-id="aab6d-135">42 kHz</span><span class="sxs-lookup"><span data-stu-id="aab6d-135">42 kHz</span></span>        |
+
+<span data-ttu-id="aab6d-136">Windows 10 IoT Core-Tests wurden auf einem Raspberry Pi 3 mit Windows 10 IoT Core Insider Preview Build 15026 (Codename Redstone 2) ausgeführt und mithilfe von Microsoft IoT Lightning SDK 1.1.0 erstellt.</span><span class="sxs-lookup"><span data-stu-id="aab6d-136">Windows 10 IoT Core tests were run on a Raspberry Pi 3 using Windows 10 IoT Core Insider Preview Build 15026 (codename Redstone 2) and built using Microsoft IoT Lightning SDK 1.1.0.</span></span>

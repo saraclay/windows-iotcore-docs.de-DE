@@ -1,0 +1,27 @@
+---
+title: Arduino-Verkabelung für Windows IoT Core-Geräte
+author: msalehmsft
+ms.author: msaleh
+ms.date: 09/06/17
+ms.topic: article
+description: Informationen Sie zum Erstellen, bereitstellen und Debuggen von Arduino verknüpfen Skizzen auf unterstützten Windows IoT Core-Geräten.
+keywords: Windows Iot, Arduino, Arduino verknüpfen, Vorlage IoT Core UWP
+ms.openlocfilehash: 212e69360e89daafe08c58a7b8bced94ea4410f2
+ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59513330"
+---
+# <a name="arduino-wiring-for-windows-iot-core-devices"></a><span data-ttu-id="7a225-104">Arduino-Verkabelung für Windows IoT Core-Geräte</span><span class="sxs-lookup"><span data-stu-id="7a225-104">Arduino Wiring for Windows IoT Core Devices</span></span>
+
+<span data-ttu-id="7a225-105">So aktivieren Sie die Entwicklung und die Wiederverwendung der vertrauten [Arduino verknüpfen](https://www.arduino.cc/en/Reference/HomePage) Skizzen auf Geräten mit IoT Core, erfolgt eine Visual Studio-Projektvorlage Verbinden von Arduino als Teil der [Windows IoT Core-Projektvorlagen Erweiterung](https://go.microsoft.com/fwlink/?linkid=847472).</span><span class="sxs-lookup"><span data-stu-id="7a225-105">To enable the development and reuse of the familiar [Arduino Wiring](https://www.arduino.cc/en/Reference/HomePage) sketches on IoT Core devices, a Visual Studio project template for Arduino Wiring is provided as part of the [Windows IoT Core Project Templates extension](https://go.microsoft.com/fwlink/?linkid=847472).</span></span>
+
+<span data-ttu-id="7a225-106">Die Projektvorlage Arduino verknüpfen ermöglicht Entwicklern und -Entwickler erstellen, bereitstellen und Debuggen Arduino verknüpfen Skizzen auf unterstützten IoT Core-Geräten, die mit der Arduino verknüpfen Sprachsemantik und erstellt auf der Arduino-Plattformen verfügbar.</span><span class="sxs-lookup"><span data-stu-id="7a225-106">The Arduino Wiring project template enables developers and makers to create, deploy and debug Arduino Wiring sketches on supported IoT Core devices using the same Arduino Wiring language semantics and constructs available on Arduino platforms.</span></span> <span data-ttu-id="7a225-107">Nicht nur dadurch können vorhandene Arduino-Skizzen Port IoT Core mit sehr geringen Kosten, sondern Arduino verknüpfen Skizzen, die auf IoT Core ausgeführt werden vollständige Windows 10-apps, die von der universellen Windows-Plattform (UWP) API nutzen können.</span><span class="sxs-lookup"><span data-stu-id="7a225-107">Not only this can help port existing Arduino sketches to IoT Core with very little cost, but Arduino Wiring sketches running on IoT Core are full Windows 10 apps that can make use of the Univeral Windows Platform (UWP) API.</span></span> <span data-ttu-id="7a225-108">Verknüpfen von Arduino Skizzen also, die vollen Zugriff auf APIs wie z. B. Kommunikation, Datenzugriff, Netzwerke, Grafiken, neben vielen anderen, mit dem Erstellen von End-to-End-Szenarien, die auf Geräten mit Windows 10 IoT Core ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="7a225-108">So, Arduino Wiring sketches have full access to APIs such as communication, data access, networking, graphics, among many others, which can be used to create end to end scenarios running on Windows 10 IoT Core devices.</span></span> <span data-ttu-id="7a225-109">Weitere Informationen zur Entwicklung von Universal Windows Platform (UWP)-Apps finden Sie in [Erstellen von Anwendungen für Windows 10 IoT Core](../develop-your-app/BuildingAppsForIoTCore.md).</span><span class="sxs-lookup"><span data-stu-id="7a225-109">For more information on developing Universal Windows Platform (UWP) Apps, please refer to [Building Applications for Windows 10 IoT Core](../develop-your-app/BuildingAppsForIoTCore.md).</span></span>
+
+<span data-ttu-id="7a225-110">Darüber hinaus mithilfe Arduino verknüpfen, stellen einen groben Entwurf, eines zugeordneten direct-Memory-Treibers, die hohe Leistung auf unterstützten Geräten bietet.</span><span class="sxs-lookup"><span data-stu-id="7a225-110">Additionally, Arduino Wiring sketches make use of a direct memory mapped driver that offers high performance on supported devices.</span></span> <span data-ttu-id="7a225-111">Weitere Informationen zu den Details zu der Leistung, finden Sie in der [Windows IoT Lightning-Leistungstests](../develop-your-app/LightningPerformance.md) Bericht.</span><span class="sxs-lookup"><span data-stu-id="7a225-111">For more details on performance details, please refer to the [Windows IoT Lightning Performance Testing](../develop-your-app/LightningPerformance.md) report.</span></span>
+
+<span data-ttu-id="7a225-112">Zum Erstellen von Projekten Arduino verknüpfen für Raspberry Pi2, Pi3 oder Minnowboard Max zu starten, finden Sie in der [Projektberater Arduino verknüpfen](ArduinoWiringProjectGuide.md).</span><span class="sxs-lookup"><span data-stu-id="7a225-112">To start building Arduino Wiring projects for Raspberry Pi2, Pi3 or Minnowboard Max, please refer to the [Arduino Wiring project guide](ArduinoWiringProjectGuide.md).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="7a225-113">Verknüpfen von Arduino ist *nicht* derzeit für DragonBoard 410 c unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7a225-113">Arduino Wiring is *not* currently supported on DragonBoard 410c.</span></span>
