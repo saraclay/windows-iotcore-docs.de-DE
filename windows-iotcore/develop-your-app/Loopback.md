@@ -8,7 +8,7 @@ description: Erfahren Sie, wie eine TCP/IP-Verbindung mit zwei Prozessen erstell
 keywords: Windows Iot "," Localhost "," Loopback, UWP, visual Studio
 ms.openlocfilehash: 498db8321babad890606e9e4589c9a6407f3ea6e
 ms.sourcegitcommit: ef85ccba54b1118d49554e88768240020ff514b0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/11/2019
 ms.locfileid: "59512290"
@@ -26,7 +26,7 @@ Die "localhost" eingehende Loopbackrichtlinie für **Windows IoT Core** muss akt
         [HKEY_LOCAL_MACHINE\system\currentcontrolset\services\mpssvc\parameters]
             "IoTInboundLoopbackPolicy"=dword:00000001
 
-Diesen Registrierungsschlüsselwert IoTInboundLoopbackPolicy muss auf DWORD: 00000001 festgelegt werden, aktivieren zu können. Wenn Sie den Registrierungswert IoTInboundLoopbackPolicy ändern, müssen Sie für die Änderung wirksam wird neu starten.  Die Loopback-Richtlinie von "localhost" standardmäßig aktiviert werden sollte, auf **Windows IoT Core**
+Diesen Registrierungsschlüsselwert IoTInboundLoopbackPolicy muss auf DWORD: 00000001 festgelegt werden, aktivieren zu können. Wenn Sie den Registrierungswert IoTInboundLoopbackPolicy ändern, müssen Sie für die Änderung wirksam wird neu starten.  Die Loopback-Richtlinie von "localhost" standardmäßig aktiviert werden sollte, auf **Windows IoT Core** 
 
 So überprüfen, dass der Wert festlegen, führen Sie den folgenden Befehl auf dem **Windows IoT Core** Gerät:
 
